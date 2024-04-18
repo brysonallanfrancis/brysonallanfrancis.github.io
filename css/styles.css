@@ -1,0 +1,6 @@
+/* CSS Reset */
+body, header, nav, main, footer, img, h1, ul, section, aside, figure {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
