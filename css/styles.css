@@ -1,9 +1,3 @@
-/*
-    Group Members: Carston Hyre, Bryson Francis, Prabesh Shrestha 
-    File Name: styles.css
-    Date: 4/18/2024
-*/
-
 /* CSS Reset */
 body, header, nav, main, footer, img, h1, h3, ul, aside, figure, figcaption, video {
     margin: 0;
@@ -97,6 +91,12 @@ nav li a {
     text-decoration: none;
 }
 
+nav li a:hover {
+    color: #ff4d4d; /* Red color for hover */
+    background-color: #f6eee4; /* Light background color for hover */
+    opacity: 0.5;
+}
+
 /* Style rules for main content */
 main {
     padding: 2%;
@@ -116,7 +116,7 @@ main ul {
 }
 
 .link {
-    color: #4d3319;
+    color: #ff0000; /* Red color */
     text-decoration: none;
     font-weight: bold;
     font-style: italic;
@@ -295,8 +295,8 @@ footer a {
     }
     
     nav li a:hover {
-        color: #2a1f14;
-        background-color: #f6eee4;
+        color: #ff4d4d; /* Red color for hover */
+        background-color: #f6eee4; /* Light background color for hover */
         opacity: 0.5;
     }
     
