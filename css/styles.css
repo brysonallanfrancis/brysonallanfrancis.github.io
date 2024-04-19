@@ -15,6 +15,15 @@ img, style, video {
     display: block;
 }
 
+.hero {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../images/Heart_hero.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+
+}
+
+
 /* Style rules for skip navigation link */
 .skip {
     position: absolute;
