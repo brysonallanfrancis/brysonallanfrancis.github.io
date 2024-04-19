@@ -23,7 +23,6 @@ img, style, video {
     padding-top: 5em;
 }
 
-
 /* Style rules for skip navigation link */
 .skip {
     position: absolute;
@@ -310,7 +309,7 @@ footer a {
     }
     
     nav li a:hover {
-        color: #ff4d4d; /* Red color for hover */
+        color: #000000; /* Red color for hover */
         background-color: #f6eee4; /* Light background color for hover */
         opacity: 0.5;
     }
