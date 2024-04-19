@@ -68,7 +68,7 @@ img, style, video {
 
 /* Style rules for navigation area */
 nav {
-    background-color: #2a1f14;
+    background-color: #ff0000;
 }
 
 nav ul {
@@ -199,7 +199,7 @@ form #submit {
 footer {
     text-align: center;
     font-size: 0.85em;
-    background-color: #2a1f14;
+    background-color: black;
     color: #f6eee4;
     padding: 1% 0;
 }
@@ -317,7 +317,7 @@ footer a {
 
     /* Style rules for table */
     table {
-        border: 1px solid #2a1f14;
+        border: 1px solid red;
         border-collapse: collapse;
         margin: 0 auto;
     }
@@ -329,18 +329,18 @@ footer a {
     }
     
     th, td {
-        border: 1px solid #2a1f14;
+        border: 1px solid black;
         padding: 1%;
     }
     
     th {
-        background-color: #2a1f14;
+        background-color: black;
         color: #fff;
         font-size: 1.15em;
     }
     
     tr:nth-child(odd) {
-        background-color: #deccba;
+        background-color: light red;
     }
 
     /* Viewport: Style rules for form elements */
