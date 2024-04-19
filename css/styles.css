@@ -68,7 +68,7 @@ img, style, video {
 
 /* Style rules for navigation area */
 nav {
-    background-color: #2a1f14;
+    background-color: #ff0000;
 }
 
 nav ul {
@@ -199,7 +199,7 @@ form #submit {
 footer {
     text-align: center;
     font-size: 0.85em;
-    background-color: #2a1f14;
+    background-color: black;
     color: #f6eee4;
     padding: 1% 0;
 }
