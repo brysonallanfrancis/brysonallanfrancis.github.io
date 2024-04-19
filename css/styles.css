@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*
     Group Members: Carston Hyre, Bryson Francis, Prabesh Shrestha 
     File Name: styles.css
@@ -390,4 +391,11 @@ footer a {
         color: #000;
     }
     
+=======
+/* CSS Reset */
+body, header, nav, main, footer, img, h1, ul, section, aside, figure {
+    margin: 0;
+    padding: 0;
+    border: 0;
+>>>>>>> 2ee24536671bc41b0f89ff1a945e1e0168d64280
 }
