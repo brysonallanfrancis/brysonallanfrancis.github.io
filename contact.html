@@ -60,9 +60,56 @@
 </header>
 
     <main>
-		<div id="___">
-        	<p></p>
-		</div>
+      <form class="form-grid"><!-- Start Form -->
+        <fieldset>
+            <legend>Contact Information</legend>
+            <label for="fName">First Name:</label>
+            <input type="text" name="fName" id="fName">
+
+            <label for="lName">Last Name:</label>
+            <input type="text" name="lName" id="lName">
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+
+            <label for="phone">Phone:</label>
+            <input type="tel" name="phone" id="phone">
+        </fieldset>
+
+        <fieldset>
+            <legend>What kind of questions do you have for us? Select the topic below!</legend>
+            
+            <label for=”">
+                <input type="checkbox" name="info" id="recipes_q" value="recipes_q">Recipes
+            </label>
+
+            <label for="">
+                <input type="checkbox" name="info" id="workout_q" value="workout_q">Workout Plans
+            </label>
+
+            <label for="">
+                <input type="checkbox" name="info" id="donation_q" value="donation_q">Donations
+            </label>
+
+            <label for="">
+                <input type="checkbox" name="info" id="cpr_q" value="cpr_q">CPR
+            </label>
+
+            <label for="">
+                <input type="checkbox" name="info" id="professional_q" value="professional_q">Professionals
+            </label>
+
+            <label for="other">
+                <input type="checkbox" name="info" id="other" value="other"> Other, please specify below. 
+            </label>
+
+            <label for="questions"></label>
+            <textarea name="questions" id="questions" rows="5" cols="35"></textarea>
+        </fieldset>
+
+        <input type="submit" id="submit" value="Submit" class="btn">
+    </form>
+
     </main>
     <footer>
         <div class="copyright">

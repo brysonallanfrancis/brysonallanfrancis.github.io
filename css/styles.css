@@ -20,7 +20,7 @@ img, style, video {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right;
-
+    padding-top: 5em;
 }
 
 
@@ -92,7 +92,7 @@ nav li a {
 }
 
 nav li a:hover {
-    color: #ff4d4d; /* Red color for hover */
+    color: #000000; /* Red color for hover */
     background-color: #f6eee4; /* Light background color for hover */
     opacity: 0.5;
 }
@@ -171,29 +171,44 @@ figcaption {
     text-decoration: none;
     font-weight: bold;
 }
+
 /* Style rules for form elements */
-fieldset, input, textarea {
-    margin-bottom: 2%;
+form {
+    max-width: 80%; /* Set the maximum width of the form */
+    margin: 0 auto; /* Center the form horizontally */
+    padding: 20px; /* Add padding inside the form */
+    border: 2px solid #ccc; /* Add a border around the form */
+    border-radius: 10px; /* Add rounded corners to the form */
 }
 
-fieldset legend {
-    font-weight: bold;
-    font-size: 1.25em;
+fieldset {
+    border: none; /* Remove border from fieldset */
+}
+
+input[type="text"], input[type="tel"], input[type="email"],
+textarea {
+    width: 100%; /* Make input fields take up full width */
+    box-sizing: border-box; /* Include padding and border in width calculation */
+    margin-bottom: 10px; /* Add margin below each input field */
+    padding: 10px; /* Add padding inside input fields */
+    border: 1px solid #ccc; /* Add border to input fields */
+    border-radius: 5px; /* Add rounded corners to input fields */
 }
 
 label {
     display: block;
-    padding-top: 2%;
+    margin-bottom: 5px; /* Add margin below each label */
 }
 
 form #submit {
-    margin: 0 auto;
+    margin-top: 20px; /* Add space above the submit button */
     display: block;
-    padding: 2%;
-    background-color: #78593a;
+    padding: 10px; /* Reduce the padding for the submit button */
+    background-color: #c00000;
     color: #f6eee4;
     font-size: 1.25em;
-    border-radius: 10px;
+    border-radius: 5px; /* Use a smaller border radius for the button */
+    border: none; /* Remove the default button border */
 }
 /* Style rules for footer content */
 footer {
