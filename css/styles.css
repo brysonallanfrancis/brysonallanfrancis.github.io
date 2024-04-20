@@ -49,20 +49,20 @@ body {
 
 /* Style rules for navigation area */
 nav {
-    background-color: #ff0000;
+    background-color: #ff1639;
 }
 
 nav ul {
-    list-style-type: none;
+    list-style: none;
+    margin: 0;
     text-align: center;
 }
 
 nav li {
-    display: block;
+    display: inline-block;
     font-size: 1.5em;
-    font-family: Montserrat, Arial, sans-serif;
+    font-family: "Protest Riot", Arial, sans-serif;
     font-weight: bold;
-    border-top: 0.5px solid #f6eee4;
 }
 
 nav li a {
@@ -73,7 +73,8 @@ nav li a {
 }
 
 nav li a:hover {
-    color: #000000 !important;
+    color: #000000;
+    opacity: 0.5;
 }
 
 /* Style Rules for Header */
@@ -380,7 +381,7 @@ footer a {
 
     .mobile, .mobile-nav {
     display: none;  
-            }
+    }
     /* Style rules for nav area */
     nav li {
         font-size: 1.5em;
@@ -390,11 +391,6 @@ footer a {
     }
     nav li a:hover {
         color: #000000 !important; /* Change text color to black on hover */
-    }
-
-    nav:active {
-        background-color: #000000;
-        color: #fff;
     }
 
 }
