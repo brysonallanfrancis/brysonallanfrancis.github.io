@@ -114,6 +114,13 @@ main ul {
     list-style-type: square;
 }
 
+#image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5em;
+}
+
 .link {
     color: #ff0000; /* Red color */
     text-decoration: none;
@@ -275,7 +282,6 @@ footer a {
 
     /* Style rule for the copyright class */
 
-
     .social {
         float: right;
         width: 25%;
@@ -350,7 +356,9 @@ footer a {
         font-size: 1.15em;
     }
     
-
+    tr:nth-child(odd) {
+        background-color: light red;
+    }
 
     /* Viewport: Style rules for form elements */
     form {
