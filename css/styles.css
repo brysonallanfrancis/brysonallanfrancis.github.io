@@ -21,9 +21,6 @@ body {
 
 
 /* Style rules for mobile viewport */
-
-/* Style rule show mobile class and hide tab-desk class */
-/* Hide mobile menu by default */
 .mobile-menu {
     display: none;
   }
@@ -164,25 +161,25 @@ main h3 {
 
 /* Style rules for form elements */
 form {
-    max-width: 80%; /* Set the maximum width of the form */
-    margin: 0 auto; /* Center the form horizontally */
-    padding: 20px; /* Add padding inside the form */
-    border: 2px solid #ccc; /* Add a border around the form */
-    border-radius: 10px; /* Add rounded corners to the form */
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
 }
 
 fieldset {
-    border: none; /* Remove border from fieldset */
+    border: none;
 }
 
 input[type="text"], input[type="tel"], input[type="email"],
 textarea {
-    width: 100%; /* Make input fields take up full width */
-    box-sizing: border-box; /* Include padding and border in width calculation */
-    margin-bottom: 10px; /* Add margin below each input field */
-    padding: 10px; /* Add padding inside input fields */
-    border: 1px solid #ccc; /* Add border to input fields */
-    border-radius: 5px; /* Add rounded corners to input fields */
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 .mobile-nav a {
@@ -211,37 +208,37 @@ textarea {
   
 label {
     display: block;
-    margin-bottom: 5px; /* Add margin below each label */
+    margin-bottom: 5px;
 }
 
 form #submit {
-    margin-top: 20px; /* Add space above the submit button */
+    margin-top: 20px;
     display: block;
-    padding: 10px; /* Reduce the padding for the submit button */
+    padding: 10px;
     background-color: #c00000;
     color: #f6eee4;
     font-size: 1.25em;
-    border-radius: 5px; /* Use a smaller border radius for the button */
-    border: none; /* Remove the default button border */
+    border-radius: 5px;
+    border: none;
 }
 
 .youtube-video {
     position: relative;
     width: 100%;
-    max-width: 560px; /* Adjust as needed */
+    max-width: 560px;
     margin: 0 auto;
 }
 
 .youtube-video iframe {
     width: 100%;
-    height: 315px; /* Adjust as needed */
+    height: 315px;
 }
 
 .youtube-video p {
     text-align: center;
-    margin-top: 20px; /* Adjust as needed */
-    font-size: 18px; /* Adjust as needed */
-    color: #333; /* Adjust as needed */
+    margin-top: 20px;
+    font-size: 18px; 
+    color: #333; 
 }
 
 /* Style rules for footer content */
@@ -319,14 +316,10 @@ footer a {
 }
 
 /* Media Query for Tablet Viewport */
-@media screen and (min-width: 620px), print {
-    /* Show tab-desk class, hide mobile class */
-    .tab-desk {
-        display: block;
-    }
-    .mobile {
-        display: none;
-    }
+@media screen and (max-width: 720px), print {
+        .desktop {
+            display:none;
+        }
 
     /* Style rules for nav area */
     nav li {
@@ -370,15 +363,10 @@ footer a {
 }
 
 /* Media Query for Desktop Viewport */
-@media screen and (min-width: 1000px), print {
-    /* Show desktop class, hide mobile-tablet class */
-    .desktop {
-        display: block;
-    }
-    .mobile-tablet {
+@media screen and (min-width: 1200px), print {
+    .mobile-menu, .hamburger {
         display: none;
     }
-
     .mobile, .mobile-nav {
     display: none;  
     }
@@ -390,7 +378,22 @@ footer a {
         padding: 0.5em 1.5em;
     }
     nav li a:hover {
-        color: #000000 !important; /* Change text color to black on hover */
+        color: #000000 !important;
     }
+}
 
+/* Media Query for Large Desktop Viewport */
+@media screen and (min-width: 1440px), print {
+    .mobile-menu, .hamburger {
+        display: hide;
+    }
+}
+
+/* Media Query for Print */
+@media print {
+    
+    body {
+        background-color: #fff;
+        color: #000;
+    }   
 }
