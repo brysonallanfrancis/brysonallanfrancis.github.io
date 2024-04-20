@@ -100,6 +100,52 @@ nav li a:hover {
 >>>>>>> efb63ef1e3181358108d9a1fae85aba4decea1aa
 }
 
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+caption {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-bottom: 10px;
+  }
+  
+thead th {
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: left;
+  }
+  
+tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+tbody tr:last-child td {
+    border-bottom: none;
+  }
+  
+td:first-child {
+    font-weight: bold;
+  }
+
+caption {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 1%;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 1%;
+}
+
+th {
+    background-color: black;
+    color: #fff;
+    font-size: 1.15em;
+}
 /* Style rules for main content */
 main {
     padding: 2%;
@@ -265,6 +311,8 @@ footer a {
     aside {
         grid-column: 1 / span 2;
     }
+
+    
     
     /* Tablet Vieport: Style rule for form element */
     form {
@@ -325,12 +373,35 @@ footer a {
         font-size: 2em;
     }
 
-    /* Style rules for table */
     table {
-        border: 1px solid red;
+        width: 100%;
         border-collapse: collapse;
-        margin: 0 auto;
-    }
+      }
+      
+      caption {
+        font-size: 1.2rem;
+        font-weight: bold;
+        padding-bottom: 10px;
+      }
+      
+      thead th {
+        background-color: #f2f2f2;
+        padding: 10px;
+        text-align: left;
+      }
+      
+      tbody td {
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+      }
+      
+      tbody tr:last-child td {
+        border-bottom: none;
+      }
+      
+      td:first-child {
+        font-weight: bold;
+      }
     
     caption {
         font-size: 1.5em;
