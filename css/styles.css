@@ -92,7 +92,7 @@ nav li a {
 
 nav li a:hover {
     color: #000000; /* Red color for hover */
-    background-color: #f6eee4; /* Light background color for hover */
+    background-color: #000000; /* Light background color for hover */
     opacity: 0.5;
 }
 
@@ -274,10 +274,7 @@ footer a {
     }
 
     /* Style rule for the copyright class */
-    .copyright {
-        float: left;
-        width: 65%;
-    }
+
 
     .social {
         float: right;
@@ -353,9 +350,7 @@ footer a {
         font-size: 1.15em;
     }
     
-    tr:nth-child(odd) {
-        background-color: light red;
-    }
+
 
     /* Viewport: Style rules for form elements */
     form {
