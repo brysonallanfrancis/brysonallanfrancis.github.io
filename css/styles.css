@@ -15,6 +15,11 @@ img, style {
     display: block;
 }
 
+.image-size {
+    height: 300px !important;
+    width: 400px !important;
+  }
+
 .hero {
     background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../images/Heart_hero.png);
     background-size: contain;
@@ -296,119 +301,140 @@ footer a {
     }
 }
 
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 620px), print {
+    /* Show tab-desk class, hide mobile class */
+    .tab-desk {
+        display: block;
+    }
+    .mobile {
+        display: none;
+    }
+
+    /* Style rules for nav area */
+    nav li {
+        border-top: none;
+        display: inline-block;
+        font-size: 1.25em;
+    }
+    nav li a {
+        padding: 0.5em;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 10px;
+    }
+    aside {
+        grid-column: 1 / span 2;
+    }
+
+    .full-width-img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Style rule for form element */
+    form {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    /* Style rules for footer area */
+    footer {
+        overflow: auto;
+    }
+
+    /* Style rule for social class */
+    .social {
+        float: right;
+        width: 25%;
+    }
+}
+
 /* Media Query for Desktop Viewport */
 @media screen and (min-width: 1000px), print {
-    
-    /* Desktop Viewport: Show desktop class, hide mobile-tablet class */
-    
-    /* .desktop style rule */
+    /* Show desktop class, hide mobile-tablet class */
     .desktop {
         display: block;
     }
-    
-    /* Style rule for hiding mobile-tablet class */
     .mobile-tablet {
         display: none;
     }
-    /* Desktop Viewport: Style rules for nav area */
+
+    /* Style rules for nav area */
     nav li {
         font-size: 1.5em;
     }
-    
     nav li a {
         padding: 0.5em 1.5em;
     }
-    
     nav li a:hover {
         color: #000000 !important; /* Change text color to black on hover */
     }
-    
-    /* Desktop Viewport: Style rules for main content */
+
+    /* Style rules for main content */
 
     table {
         width: 100%;
         border-collapse: collapse;
-      }
-      
-      caption {
+    }
+    caption {
         font-size: 1.2rem;
         font-weight: bold;
         padding-bottom: 10px;
-      }
-      
-      thead th {
+    }
+    thead th {
         background-color: #f2f2f2;
         padding: 10px;
         text-align: left;
-      }
-      
-      tbody td {
+    }
+    tbody td {
         padding: 10px;
         border-bottom: 1px solid #ddd;
-      }
-      
-      tbody tr:last-child td {
+    }
+    tbody tr:last-child td {
         border-bottom: none;
-      }
-      
-      td:first-child {
+    }
+    td:first-child {
         font-weight: bold;
-      }
-    
+    }
+
     caption {
         font-size: 1.5em;
         font-weight: bold;
         padding: 1%;
     }
-    
+
     th, td {
         border: 1px solid black;
         padding: 1%;
     }
-    
+
     th {
         background-color: black;
         color: #fff;
         font-size: 1.15em;
     }
-    
+
     tr:nth-child(odd) {
-        background-color: light red;
+        background-color: lightred; /* Adjusted color name */
     }
 
-    /* Viewport: Style rules for form elements */
+    /* Style rules for form elements */
     form {
         width: auto;
     } 
 
+    /* Style rule for .form-grid class */
     .form-grid {
         display: grid;
         grid-template-columns: auto auto;
         grid-gap: 20px;
     }
 
+    /* Style rule for .btn class */
     .btn {
         grid-column: 1 / span 2;
-    }
-}
-
-/* Media Query for Large Desktop Viewports */
-@media screen and (min-width: 1921px), print {
-    
-    body {
-        background: linear-gradient(#f6eee4, #78593a);
-    }
-        
-    main {
-        background-color: #f6eee4;
-    }
-    
-}
-
-/* Media Query for Print */
-@media print {
-    body {
-        background-color: #fff;
-        color: #000;
     }
 }
