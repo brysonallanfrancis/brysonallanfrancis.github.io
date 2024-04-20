@@ -91,9 +91,7 @@ nav li a {
 }
 
 nav li a:hover {
-    color: #000000; /* Red color for hover */
-    background-color: #f6eee4; /* Light background color for hover */
-    opacity: 0.5;
+    color: #000000 !important; /* Change text color to black on hover */
 }
 
 /* Style rules for main content */
@@ -215,7 +213,8 @@ footer {
     font-size: 0.85em;
     background-color: black;
     color: #f6eee4;
-    padding: 1% 0;
+    padding: 1% 1%;
+    left
 }
 
 footer a {
@@ -306,12 +305,6 @@ footer a {
     
     nav li a {
         padding: 0.5em 1.5em;
-    }
-    
-    nav li a:hover {
-        color: #000000; /* Red color for hover */
-        background-color: #f6eee4; /* Light background color for hover */
-        opacity: 0.5;
     }
     
     /* Desktop Viewport: Style rules for main content */
