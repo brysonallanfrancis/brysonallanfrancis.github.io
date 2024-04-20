@@ -10,15 +10,10 @@ body {
     background-color: #f6eee4;
 }
 
-img, style {
-    max-width: 100%;
-    display: block;
-}
-
 .image-size {
     height: 300px !important;
     width: 400px !important;
-  }
+}
 
 .hero {
     background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../images/Heart_hero.png);
@@ -27,6 +22,8 @@ img, style {
     background-position: right;
     padding-top: 5em;
 }
+
+
 
 /* Style rules for mobile viewport */
 
@@ -142,7 +139,15 @@ main h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 5em;
+    padding-bottom: 3em;
+}
+
+#button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0
+
 }
 
 /* Style rules for form elements */
@@ -329,9 +334,9 @@ footer a {
         grid-column: 1 / span 2;
     }
 
-    .full-width-img {
-        max-width: 100%;
-        height: auto;
+    .image-size {
+        height: 50vw; /* Height scales with viewport width */
+        width: 66.67vw; /* Width scales with viewport width */
     }
 
     /* Style rule for form element */
