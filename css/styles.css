@@ -26,6 +26,10 @@ body {
 /* Hide mobile menu by default */
 .mobile-menu {
     display: none;
+    background-color: #ff0000;
+    color: #f6eee4;
+    padding: 0.5em 2em;
+    text-decoration: none;
   }
   
   /* Styles for the hamburger icon */
@@ -46,6 +50,8 @@ body {
   .menu-open {
     display: block;
   }
+
+
 
 /* Style rules for navigation area */
 nav {
@@ -262,80 +268,18 @@ footer a {
     padding: 4%;
 }
 
-/* Media Query for Tablet Viewport */
-@media screen and (min-width: 620px), print {
- 
-    /* Tablet Viewport: Show tab-desk class, hide mobile class */
-    #desktop-nav {
-        display: none;
-    }
-
-    .mobile {
-        display: none;
-    }
-    
-    /* Tablet Viewport: Style rules for nav area */
-    nav li {
-        border-top: none;
-        display: inline-block;
-        font-size: 1.25em;
-    }
-    
-    nav li a {
-        padding: 0.5em;
-    }
-    
-    .grid {
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-gap: 10px;
-    }
-    
-    aside {
-        grid-column: 1 / span 2;
-    }
-
-    
-    
-    /* Tablet Vieport: Style rule for form element */
-    form {
-        width: 70%;
-        margin: 0 auto;
-    }
-    /* Tablet Viewport: Style rules for footer area */
-    
-    /* Style rule for footer */
-    footer {
-        overflow: auto;
-    }
-
-    /* Style rule for the copyright class */
-
-    .social {
-        float: right;
-        width: 25%;
-    }
-}
 
 /* Media Query for Tablet Viewport */
-@media screen and (min-width: 620px), print {
+@media screen and (max-width: 992px), print {
     /* Show tab-desk class, hide mobile class */
-    .tab-desk {
-        display: block;
-    }
-    .mobile {
-        display: none;
+    .navbar-nav {
+        display: none; /* Hide Bootstrap navigation */
     }
 
-    /* Style rules for nav area */
-    nav li {
-        border-top: none;
-        display: inline-block;
-        font-size: 1.25em;
+    .menu-toggle {
+        display: block; /* Show hamburger icon */
     }
-    nav li a {
-        padding: 0.5em;
-    }
+
     .grid {
         display: grid;
         grid-template-columns: auto auto;
@@ -366,10 +310,10 @@ footer a {
         float: right;
         width: 25%;
     }
-}
 
+}
 /* Media Query for Desktop Viewport */
-@media screen and (min-width: 1000px), print {
+@media screen and (min-width: 1200px), print {
     /* Show desktop class, hide mobile-tablet class */
     .desktop {
         display: block;
@@ -396,5 +340,11 @@ footer a {
         background-color: #000000;
         color: #fff;
     }
-
+    .navbar-nav {
+        display: inline-block;
+    }
+    
+        .menu-toggle {
+        display: none; 
+    }
 }
