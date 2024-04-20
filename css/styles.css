@@ -48,6 +48,10 @@ body {
   
 
 /* Style rules for navigation area */
+/* Hide tab-desk class */
+.tab-desk, #menu-links {
+    display: none;
+}
 nav {
     background-color: #ff0000;
 }
@@ -266,13 +270,14 @@ footer a {
 /* Media Query for Tablet Viewport */
 @media screen and (max-width: 992px), print {
     /* Show tab-desk class, hide mobile class */
-    .navbar-nav {
-        display: none; /* Hide Bootstrap navigation */
-    }
-
-    .menu-toggle {
-        display: block; /* Show hamburger icon */
-    }
+        /* Tablet Viewport: Show tab-desk class, hide mobile class */
+        .tab-desk {
+            display: block;
+        }
+    
+        .mobile, .mobile-nav {
+            display: none;
+        }
 
     .grid {
         display: grid;
@@ -309,13 +314,13 @@ footer a {
 /* Media Query for Desktop Viewport */
 @media screen and (min-width: 1200px), print {
     /* Show desktop class, hide mobile-tablet class */
-    .desktop {
+    .tab-desk {
         display: block;
     }
-    .mobile-tablet {
+
+    .mobile, .mobile-nav {
         display: none;
     }
-
     .mobile, .mobile-nav {
     display: none;  
             }
