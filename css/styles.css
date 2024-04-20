@@ -1,5 +1,5 @@
 /* CSS Reset */
-body, header, nav, main, footer, img, h1, h3, ul, aside, figure, figcaption, video {
+body, header, nav, main, footer, img, h1, ul {
     margin: 0;
     padding: 0;
     border: 0;
@@ -10,7 +10,7 @@ body {
     background-color: #f6eee4;
 }
 
-img, style, video {
+img, style {
     max-width: 100%;
     display: block;
 }
@@ -23,23 +23,6 @@ img, style, video {
     padding-top: 5em;
 }
 
-/* Style rules for skip navigation link */
-.skip {
-    position: absolute;
-    left: -999px;
-}
-
-.skip:focus {
-    color: #fff;
-    background-color: #2a1f14;
-    text-decoration: none;
-    padding: 0.5%;
-    top: auto;
-    left: auto;
-    right: 1px;
-    z-index: 1;
-}
-
 /* Style rules for mobile viewport */
 
 /* Style rule show mobile class and hide tab-desk class */
@@ -49,20 +32,6 @@ img, style, video {
 
 .tab-desk, .desktop {
     display: none;
-}
-
-/* Style rules for header area */
-.mobile h1, .mobile h3 {
-    padding: 2%;
-    text-align: center;
-}
-
-.mobile h1 {
-    font-family: 'Emblema One', cursive;
-}
-
-.mobile h3 {
-    font-family: 'Lora', serif;
 }
 
 /* Style rules for navigation area */
@@ -91,13 +60,7 @@ nav li a {
 }
 
 nav li a:hover {
-<<<<<<< HEAD
-    color: #000000 !important; /* Change text color to black on hover */
-=======
-    color: #000000; /* Red color for hover */
-    background-color: #000000; /* Light background color for hover */
-    opacity: 0.5;
->>>>>>> efb63ef1e3181358108d9a1fae85aba4decea1aa
+    color: #000000 !important;
 }
 
 /* Style rules for main content */
@@ -114,72 +77,11 @@ main h3 {
     padding-top: 2%;
 }
 
-main ul {
-    list-style-type: square;
-}
-
 #image-container {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-bottom: 5em;
-}
-
-.link {
-    color: #ff0000; /* Red color */
-    text-decoration: none;
-    font-weight: bold;
-    font-style: italic;
-}
-
-.action {
-    font-size: 1.75em;
-    font-weight: bold;
-    text-align: center;
-}
-
-.round {
-    border-radius: 6px;
-}
-
-aside {
-    text-align: center;
-    font-size: 1.5em;
-    font-weight: bold;
-    text-shadow: 4px 4px 10px #c5a687;
-}
-
-figure {
-    border: 4px solid #2a1f14;
-    box-shadow: 6px 6px 10px #c5a687;
-    max-width: 400px;
-    margin: 2% auto;
-}
-
-figcaption {
-    padding: 2%;
-    border-top: 4px solid #2a1f14;
-}
-
-#info ul {
-    margin-left: 10%;
-}
-
-#contact, #form h2 {
-    text-align: center;
-}
-
-.tel-link {
-    background-color: #2a1f14;
-    padding: 2%;
-    width: 80%;
-    margin: 0 auto;
-}
-
-.tel-link a {
-    color: #f6eee4;
-    text-decoration: none;
-    font-weight: bold;
 }
 
 /* Style rules for form elements */
@@ -226,8 +128,7 @@ footer {
     font-size: 0.85em;
     background-color: black;
     color: #f6eee4;
-    padding: 1% 1%;
-    left
+    padding: 1% 0;
 }
 
 footer a {
@@ -261,16 +162,6 @@ footer a {
     
     nav li a {
         padding: 0.5em;
-    }
-    
-    .grid {
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-gap: 10px;
-    }
-    
-    aside {
-        grid-column: 1 / span 2;
     }
     
     /* Tablet Vieport: Style rule for form element */
@@ -316,20 +207,11 @@ footer a {
         padding: 0.5em 1.5em;
     }
     
+    nav li a:hover {
+        color: #000000 !important; /* Change text color to black on hover */
+    }
+    
     /* Desktop Viewport: Style rules for main content */
-    #info ul {
-        margin-left: 5%;
-    }
-    
-    .grid {
-        grid-template-columns: auto auto auto;
-        grid-gap: 30px;
-    }
-    
-    aside {
-        grid-column: 1 / span 3;
-        font-size: 2em;
-    }
 
     /* Style rules for table */
     table {
@@ -381,29 +263,15 @@ footer a {
     body {
         background: linear-gradient(#f6eee4, #78593a);
     }
-    
-    #wrapper {
-        width: 1920px;
-        margin: 0 auto;
-    }
         
     main {
         background-color: #f6eee4;
     }
     
-    .grid {
-        grid-template-columns: auto auto auto auto;
-    }
-    
-    aside {
-        grid-column: 1 / span 4;
-        font-size: 3em;
-    }
 }
 
 /* Media Query for Print */
 @media print {
-    
     body {
         background-color: #fff;
         color: #000;
