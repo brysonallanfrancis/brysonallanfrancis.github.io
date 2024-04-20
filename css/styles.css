@@ -210,7 +210,6 @@ footer a {
         padding: 0.5em;
     }
     
-<<<<<<< HEAD
     .grid {
         display: grid;
         grid-template-columns: auto auto;
@@ -223,8 +222,6 @@ footer a {
 
     
     
-=======
->>>>>>> 2a3165b968503ad62583b9d85b8dae1114afb965
     /* Tablet Vieport: Style rule for form element */
     form {
         width: 70%;
