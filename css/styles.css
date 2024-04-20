@@ -10,11 +10,6 @@ body {
     background-color: #f6eee4;
 }
 
-.image-size {
-    height: 300px !important;
-    width: 400px !important;
-}
-
 .hero {
     background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../images/Heart_hero.png);
     background-size: contain;
@@ -335,8 +330,8 @@ footer a {
     }
 
     .image-size {
-        height: 50vw; /* Height scales with viewport width */
-        width: 66.67vw; /* Width scales with viewport width */
+        height: 80% !important; /* Height scales with viewport width */
+        width: 90% !important; /* Width scales with viewport width */
     }
 
     /* Style rule for form element */
