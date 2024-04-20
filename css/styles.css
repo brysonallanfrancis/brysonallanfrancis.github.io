@@ -367,6 +367,9 @@ footer a {
         display: none;
     }
 
+    .mobile, .mobile-nav {
+    display: none;  
+            }
     /* Style rules for nav area */
     nav li {
         font-size: 1.5em;
@@ -378,68 +381,9 @@ footer a {
         color: #000000 !important; /* Change text color to black on hover */
     }
 
-    /* Style rules for main content */
-
-    table {
-        width: 100%;
-        border-collapse: collapse;
-    }
-    caption {
-        font-size: 1.2rem;
-        font-weight: bold;
-        padding-bottom: 10px;
-    }
-    thead th {
-        background-color: #f2f2f2;
-        padding: 10px;
-        text-align: left;
-    }
-    tbody td {
-        padding: 10px;
-        border-bottom: 1px solid #ddd;
-    }
-    tbody tr:last-child td {
-        border-bottom: none;
-    }
-    td:first-child {
-        font-weight: bold;
-    }
-
-    caption {
-        font-size: 1.5em;
-        font-weight: bold;
-        padding: 1%;
-    }
-
-    th, td {
-        border: 1px solid black;
-        padding: 1%;
-    }
-
-    th {
-        background-color: black;
+    nav:active {
+        background-color: #000000;
         color: #fff;
-        font-size: 1.15em;
     }
 
-    tr:nth-child(odd) {
-        background-color: lightred; /* Adjusted color name */
-    }
-
-    /* Style rules for form elements */
-    form {
-        width: auto;
-    } 
-
-    /* Style rule for .form-grid class */
-    .form-grid {
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-gap: 20px;
-    }
-
-    /* Style rule for .btn class */
-    .btn {
-        grid-column: 1 / span 2;
-    }
 }
