@@ -47,7 +47,7 @@ nav ul {
 nav li {
     display: block;
     font-size: 1.5em;
-    font-family: Geneva, Arial, sans-serif;
+    font-family: Montserrat, Arial, sans-serif;
     font-weight: bold;
     border-top: 0.5px solid #f6eee4;
 }
@@ -61,6 +61,16 @@ nav li a {
 
 nav li a:hover {
     color: #000000 !important;
+}
+
+/* Style Rules for Header */
+header h1 {
+    font-family: "Open Sans", Arial, sans-serif;
+}
+
+header p {
+    font-family: Roboto, Arial, sans-serif;
+    font-style: italic;
 }
 
 table {
