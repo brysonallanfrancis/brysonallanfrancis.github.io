@@ -24,30 +24,34 @@ body {
 
 /* Style rule show mobile class and hide tab-desk class */
 /* Hide mobile menu by default */
-.mobile-menu {
-    display: none;
-  }
-  
-  /* Styles for the hamburger icon */
-  .menu-toggle {
-    display: block;
-    cursor: pointer;
-    padding: 10px;
-  }
-  
-  .menu-toggle .hamburger {
-    width: 25px;
-    height: 3px;
-    background-color: #333;
-    margin: 5px 0;
-  }
-  
-  /* Styles for the expanded mobile menu */
-  .menu-open {
+.mobile-nav a {
+    color: #fff;
+    text-align: center;
+    font-size: 2em;
+    text-decoration: none;
+    padding: 3%;
     display: block;
   }
+  
+.mobile-nav a.menu-icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+.menu-icon div {
+    height: 50px;
+    width: 50px;
+    background-color: #373684;
+  }
+  
 
 /* Style rules for navigation area */
+/* Hide tab-desk class */
+.tab-desk, #menu-links {
+    display: none;
+}
 nav {
     background-color: #ff1639;
 }
@@ -263,80 +267,19 @@ footer a {
     padding: 4%;
 }
 
-/* Media Query for Tablet Viewport */
-@media screen and (min-width: 620px), print {
- 
-    /* Tablet Viewport: Show tab-desk class, hide mobile class */
-    #desktop-nav {
-        display: none;
-    }
-
-    .mobile {
-        display: none;
-    }
-    
-    /* Tablet Viewport: Style rules for nav area */
-    nav li {
-        border-top: none;
-        display: inline-block;
-        font-size: 1.25em;
-    }
-    
-    nav li a {
-        padding: 0.5em;
-    }
-    
-    .grid {
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-gap: 10px;
-    }
-    
-    aside {
-        grid-column: 1 / span 2;
-    }
-
-    
-    
-    /* Tablet Vieport: Style rule for form element */
-    form {
-        width: 70%;
-        margin: 0 auto;
-    }
-    /* Tablet Viewport: Style rules for footer area */
-    
-    /* Style rule for footer */
-    footer {
-        overflow: auto;
-    }
-
-    /* Style rule for the copyright class */
-
-    .social {
-        float: right;
-        width: 25%;
-    }
-}
 
 /* Media Query for Tablet Viewport */
-@media screen and (min-width: 620px), print {
+@media screen and (max-width: 600px), print {
     /* Show tab-desk class, hide mobile class */
-    .tab-desk {
-        display: block;
-    }
-    .mobile {
-        display: none;
-    }
+        /* Tablet Viewport: Show tab-desk class, hide mobile class */
+        .tab-desk {
+            display: block;
+        }
+    
+        .mobile, .mobile-nav {
+            display: none;
+        }
 
-    /* Style rules for nav area */
-    nav li {
-        border-top: none;
-        display: inline-block;
-        font-size: 1.25em;
-    }
-    nav li a {
-        padding: 0.5em;
-    }
     .grid {
         display: grid;
         grid-template-columns: auto auto;
@@ -367,18 +310,18 @@ footer a {
         float: right;
         width: 25%;
     }
-}
 
+}
 /* Media Query for Desktop Viewport */
-@media screen and (min-width: 1000px), print {
+@media screen and (min-width: 1200px), print {
     /* Show desktop class, hide mobile-tablet class */
-    .desktop {
+    .tab-desk {
         display: block;
     }
-    .mobile-tablet {
+
+    .mobile, .mobile-nav {
         display: none;
     }
-
     .mobile, .mobile-nav {
     display: none;  
     }
