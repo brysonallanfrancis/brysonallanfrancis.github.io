@@ -23,13 +23,29 @@ body {
 /* Style rules for mobile viewport */
 
 /* Style rule show mobile class and hide tab-desk class */
-.mobile, .mobile-tablet {
-    display: block;
-}
-
-.tab-desk, .desktop {
+/* Hide mobile menu by default */
+.mobile-menu {
     display: none;
-}
+  }
+  
+  /* Styles for the hamburger icon */
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+  .menu-toggle .hamburger {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px 0;
+  }
+  
+  /* Styles for the expanded mobile menu */
+  .menu-open {
+    display: block;
+  }
 
 /* Style rules for navigation area */
 nav {
@@ -250,8 +266,8 @@ footer a {
 @media screen and (min-width: 620px), print {
  
     /* Tablet Viewport: Show tab-desk class, hide mobile class */
-    .tab-desk {
-        display: block;
+    #desktop-nav {
+        display: none;
     }
 
     .mobile {
