@@ -316,7 +316,7 @@ footer a {
 }
 
 /* Media Query for Tablet Viewport */
-@media screen and (max-width: 720px), print {
+@media screen and (min-width: 620px), print {
         .desktop {
             display:none;
         }
