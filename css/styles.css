@@ -316,10 +316,10 @@ footer a {
 }
 
 /* Media Query for Tablet Viewport */
-@media screen and (min-width: 620px), print {
-        .desktop {
-            display:none;
-        }
+@media screen and (min-width: 720px), print {
+    .desktop {
+        display:none;
+    }
 
     /* Style rules for nav area */
     nav li {
@@ -368,7 +368,7 @@ footer a {
         display: none;
     }
     .mobile, .mobile-nav {
-    display: none;  
+        display: none;  
     }
     /* Style rules for nav area */
     nav li {
